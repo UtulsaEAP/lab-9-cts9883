@@ -1,17 +1,13 @@
 def int_to_reverse_binary(num1):
-    binary_val = ''
+    binary_val = []
     while num1 >= 1:
-        print(int(num1 % 2))
-        num1 = num1 / 2
-    return binary_val
-
+        binary_val.append(num1 % 2)
+        num1 = num1 // 2
+    return str(binary_val)
 
 def string_reverse(input_string): 
-    reverse_input = ''
-    
-   #write your for loop here
-    
-    return reverse_input
+    reverse_input = str(str(input_string)[::-1])    
+    return str(reverse_input)
 
 if __name__ == '__main__':
     user_input = int(input())
@@ -19,4 +15,4 @@ if __name__ == '__main__':
     binary_string = str(int_to_reverse_binary(user_input))
     binary_string = str(string_reverse(binary_string))
     
-    print(binary_string)
+    print(str(binary_string))
