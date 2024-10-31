@@ -1,18 +1,21 @@
 def int_to_reverse_binary(num1):
-    binary_val = []
-    while num1 >= 1:
-        binary_val.append(num1 % 2)
-        num1 = num1 // 2
-    return str(binary_val)
+    if num1 == 0:
+        binary_val = [0]
+    else:
+        binary_val = []
+        while num1 >= 1:
+            binary_val.append(num1 % 2)
+            num1 = num1 // 2
+    return "".join(map(str, binary_val))
+    
 
 def string_reverse(input_string): 
-    reverse_input = str(str(input_string)[::-1])    
-    return str(reverse_input)
-
+    return input_string[::-1]
+    
 if __name__ == '__main__':
     user_input = int(input())
     
-    binary_string = str(int_to_reverse_binary(user_input))
-    binary_string = str(string_reverse(binary_string))
+    binary_string = (int_to_reverse_binary(user_input))
+    binary_string = (string_reverse(binary_string))
     
-    print(str(binary_string))
+    print(binary_string)
