@@ -13,6 +13,6 @@ if __name__ == '__main__':
    user_input3 = int(input())
    user_input4 = int(input())
    swap_values(user_input1, user_input2, user_input3, user_input4)
-   print()
+   print(str(user_input2) + ' ' + str(user_input1) + ' ' + str(user_input4) + ' ' + str(user_input3))
 
  
