@@ -1,7 +1,7 @@
 def int_to_reverse_binary(num1):
     binary_val = ''
     while num1 >= 1:
-        print(int(num1 % 2), end='')
+        print(int(num1 % 2))
         num1 = num1 / 2
     return binary_val
 
